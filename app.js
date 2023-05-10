@@ -90,3 +90,21 @@ function createOption(text) {
     option.textContent = text;
     return option;
 }
+
+button.addEventListener('click', function(event) {
+    event.preventDefault();
+    const formData = {
+        tower: form.elements[0].value,
+        floor: form.elements[1].value,
+        room: form.elements[2].value,
+        date: form.elements[3].value,
+        comment: form.elements[4].value,
+    };
+
+    console.log(JSON.stringify(formData));
+});
+
+buttonRed.addEventListener('click', function(event) {
+    event.preventDefault();
+    form.reset();
+});
