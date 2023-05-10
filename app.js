@@ -108,3 +108,5 @@ buttonRed.addEventListener('click', function(event) {
     event.preventDefault();
     form.reset();
 });
+
+/* console.log(form.elements); */
